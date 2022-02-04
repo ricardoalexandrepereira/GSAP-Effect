@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    top:0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    height: 100vh;
+    font-family: 'Lucida Sans', sans-serif;
+}
+/*body:hover .container{
+    clip-path: polygon(19% 6%, 94% 6%, 80% 94%, 6% 94%);
+
+}*/
+.container{
+    height: 100vh;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: clip-path 1s;
+    width: 100%;
+    
+}
+.container2{
+    z-index: -1;
+    height: 100vh;
+    position: absolute;
+    clip-path: polygon(19% 6%, 94% 6%, 80% 94%, 6% 94%);
+    transition: clip-path 1s;
+    width: 100%;
+    
+}
+.img{
+    background-image: url('jungle.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+.img2{
+    background-image: url('ele.jpeg');
+    background-size: cover;
+    height: 100vh;
+    
+    
+}
+.content{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+}
+h1{
+    font-size: 4rem;
+    color: white;
+    
+}
